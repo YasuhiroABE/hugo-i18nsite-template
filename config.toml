@@ -1,0 +1,35 @@
+##
+## @file: config.toml
+## @desc: It manages the contens/ directory as follows:
+##        contents/_index.ja.html
+##        contents/_index.en.html
+##
+baseURL = "http://localhost:1313/"
+hasCJKLanguage = true
+DefaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = true
+
+googleAnalytics  = "UA-508xxxxx-x"
+
+[languages]
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja"
+    weight = 1
+    contentDir = "content"
+    [languages.ja.params]
+      section1_title = "プロフィール"
+      section2_title = "活動報告"
+      section3_title = "ホーム"
+      section4_title = "Google"
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    contentDir = "content"
+    [languages.en.params]
+      section1_title = "Profile"
+      section2_title = "Activity Report"
+      section3_title = "Home"
+      section4_title = "Google"
+

@@ -1,0 +1,24 @@
+<div class="header-container">
+  <header class="wrapper clearfix">
+    <div class="title">
+      <a href="/" alt="return to the top page"><img src="{{ "images/siteicon.png" | relURL }}" /></a>
+      <h1><a href="{{ "/" | relLangURL }}">{{ i18n "site_title" . }}</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ "profile" | relLangURL }}">{{ .Site.Params.section1_title }}</a></li>
+	<li><a href="{{ "activities" | relLangURL }}">{{ .Site.Params.section2_title  }}</a></li>
+        <li><a href="{{ "" | relURL }}">{{ .Site.Params.section3_title }}</a></li>
+        <li><a href="{{ "http://www.google.com/" }}">{{ .Site.Params.section4_title }}</a></li>
+      </ul>
+      {{ if .IsTranslated }}
+        {{ range .Translations }}
+      <div id="lang-selector">[ <a href="{{ .Permalink }}" alt="Switch to {{.Language.LanguageName}}">{{ .Language.LanguageName }}</a> ]</div>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </header>
+</div>
+
+<div class="main-container">
+  <div class="main wrapper clearfix">
