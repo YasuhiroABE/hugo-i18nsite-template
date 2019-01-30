@@ -1,0 +1,15 @@
+
+
+body {
+  font-family: 'Noto Sans JP', serif;
+}
+
+/* @desc: fixed navigation bar */
+/* https://www.nxworld.net/tips/stikcy-or-change-header-and-navigation-when-scrolling-using-jquery.html */
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
