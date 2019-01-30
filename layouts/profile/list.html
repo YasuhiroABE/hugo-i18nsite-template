@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+ <ul>
+ {{ $data := index .Site.Data $.Site.Language.Lang }}
+ {{ $profile := index $data "profile" }}
+ {{ range $item := index $profile "workhistory" }}
+     <li>{{ . }}, {{ $item }}</li>
+ {{ end }}
+ </ul>
+
+{{ end }}
