@@ -18,6 +18,8 @@ googleAnalytics  = "UA-508xxxxx-x"
     weight = 1
     contentDir = "content"
     [languages.ja.params]
+      site_description = ""
+      site_author = "Hoo Bar <foo.bar@example.com>"
       section1_title = "プロフィール"
       section2_title = "活動報告"
       section3_title = "ホーム"
@@ -28,6 +30,8 @@ googleAnalytics  = "UA-508xxxxx-x"
     weight = 2
     contentDir = "content"
     [languages.en.params]
+      site_description = ""
+      site_author = "Hoo Bar <foo.bar@example.com>"
       section1_title = "Profile"
       section2_title = "Activity Report"
       section3_title = "Home"

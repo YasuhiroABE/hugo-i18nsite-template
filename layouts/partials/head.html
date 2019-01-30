@@ -1,16 +1,16 @@
 
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>{{ i18n "site_title" . }} | {{ .Title }}</title>
-  <meta name="description" content="{{ .Site.Params.site_description }}">
-  <meta name="author" content="{{ .Site.Params.site_author }}">
-  <meta name="copyright" content="{{ i18n "copyright" . }}">
+  <meta name="description" content="{{ .Site.Params.site_description }}" />
+  <meta name="author" content="{{ .Site.Params.site_author }}" />
+  <meta name="copyright" content="{{ i18n "copyright" . }}" />
 
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,shrink-to-fit=no" />
 
   {{ if .IsTranslated }}
     {{ range .Translations }}
-    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" />
     {{ end }}
   {{ end }}
 
@@ -23,8 +23,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+  <!-- web-font --> 
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" />
+
   <!-- local settings -->
-  <link rel="stylesheet" href="{{ "css/default.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/default.css" | relURL }}" />
   <script type="text/javascript" src="{{ "js/default.js" | relURL }}" ><!-- --></script>
   
   <!-- local information -->
