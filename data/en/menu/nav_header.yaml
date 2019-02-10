@@ -1,0 +1,4 @@
+- name: "Home"
+  url: "/en/"
+- name: "Profile"
+  url: "/en/profile"

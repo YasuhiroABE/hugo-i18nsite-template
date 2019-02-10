@@ -1,0 +1,4 @@
+- name: "トップ"
+  url: "/ja/"
+- name: "プロフィール"
+  url: "/ja/profile"

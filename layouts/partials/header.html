@@ -6,10 +6,11 @@
     </div>
     <nav>
       <ul>
-        <li><a href="{{ "profile" | relLangURL }}">{{ .Site.Params.section1_title }}</a></li>
-	<li><a href="{{ "activities" | relLangURL }}">{{ .Site.Params.section2_title  }}</a></li>
-        <li><a href="{{ "" | relURL }}">{{ .Site.Params.section3_title }}</a></li>
-        <li><a href="{{ "http://www.google.com/" }}">{{ .Site.Params.section4_title }}</a></li>
+        {{- $data := index $.Site.Data .Site.Language.Lang }}
+        {{- $menu := index $data.menu "nav_header" }}
+        {{- range  $menu }}
+        <li><a href="{{ .url }}">{{ .name }}</a></li>
+        {{- end }}
       </ul>
       {{ if .IsTranslated }}
         {{ range .Translations }}
