@@ -1,14 +1,15 @@
 
-Purpose of this tempate
-=======================
+About this tempate
+==================
 
 1. This is my personal template to compose my hugo document.
-2. I don't aim somebody to use this tempate, but if it helps, it's my pleasure.
+2. I don't aim somebody to use this tempate.
+3. However, I hope that it will be helpful for somebody else.
 
 LICENSE
 -------
 
-    Copyright 2019 YasuhiroABE, <yasu@yasundial.org>
+    Copyright 2019,2021 YasuhiroABE, <yasu@yasundial.org>
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
