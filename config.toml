@@ -9,7 +9,10 @@ hasCJKLanguage = true
 DefaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = true
 
-googleAnalytics  = "UA-508xxxxx-x"
+[security]
+  enableInlineShortcodes = true
+  [security.exec]
+    allow = [ "^asciidoctor$" ]
 
 [languages]
   [languages.ja]
